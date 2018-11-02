@@ -5,8 +5,7 @@ public class Fila {
 	private Object[] valores;
 	private int primeiro;
 	private int ultimo;
-	private int total;
-	
+	private int total;	
 	public Fila(){
 		this.valores = new  Object[100];
 		this.primeiro = 0;
@@ -32,26 +31,20 @@ public class Fila {
 	}
 	//Verifica se esta vazia
 	public boolean isEmpty() {
-		
 		return total==0;
 	}
 	//Verifica se esta cheira
-	public boolean isFull() {
-		
+	public boolean isFull() {		
 		return total==valores.length;
 	}
-	
 	public static void main ( String[] args) {
 		
-		Fila f = new Fila();
-		
+		Fila f = new Fila();	
 		f.inserir(10);
 		f.inserir("a");
-		
 		while(f.isEmpty() == false) {
 			Object x = f.retirar();
 			System.out.println(x);
 		}
-	}
-	
+	}	
 }
