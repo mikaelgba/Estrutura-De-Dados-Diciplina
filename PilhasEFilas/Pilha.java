@@ -20,7 +20,7 @@ public class Pilha {
 		return false;
 	}
 
-	// Metodo paradizer o tamanho do ponteiro
+	// Metodo para dizer o tamanho do ponteiro Vetor
 	public int size() {
 
 		if (this.isEmpty())
